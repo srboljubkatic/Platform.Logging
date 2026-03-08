@@ -1,0 +1,5 @@
+site_name: '.NET logging library'
+site_description: 'Logging library for .NET services'
+
+plugins:
+  - techdocs-core

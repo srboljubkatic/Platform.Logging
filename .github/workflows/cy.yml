@@ -1,0 +1,17 @@
+name: ci
+permissions:
+  contents: read
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  build_and_test:
+    name: Build and test
+    uses: Global/sam-workflows/.github/workflows/build_test.yml@main
+    with:
+        configuration: 'Release'
+        executor-tag: '8.0'
+    secrets: inherit

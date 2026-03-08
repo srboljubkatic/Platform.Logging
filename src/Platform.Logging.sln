@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platform.Logging", "Platform.Logging\Platform.Logging.csproj", "{E595DEA0-219A-4E4F-9C08-C72D9E762A7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platform.Logging.DependencyInjection", "Platform.Logging.DependencyInjection\Platform.Logging.DependencyInjection.csproj", "{6C8E53EA-633A-42EE-A2D6-346F9287DAEF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{9ADFD884-1866-418F-AB23-EC47A89A4448}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platform.Logging.Tests", "Platform.Logging.Tests\Platform.Logging.Tests.csproj", "{C778564F-6A3B-4B33-8B60-9B0CCC1770B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E595DEA0-219A-4E4F-9C08-C72D9E762A7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E595DEA0-219A-4E4F-9C08-C72D9E762A7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E595DEA0-219A-4E4F-9C08-C72D9E762A7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E595DEA0-219A-4E4F-9C08-C72D9E762A7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C8E53EA-633A-42EE-A2D6-346F9287DAEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C8E53EA-633A-42EE-A2D6-346F9287DAEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C8E53EA-633A-42EE-A2D6-346F9287DAEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C8E53EA-633A-42EE-A2D6-346F9287DAEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C778564F-6A3B-4B33-8B60-9B0CCC1770B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C778564F-6A3B-4B33-8B60-9B0CCC1770B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C778564F-6A3B-4B33-8B60-9B0CCC1770B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C778564F-6A3B-4B33-8B60-9B0CCC1770B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C778564F-6A3B-4B33-8B60-9B0CCC1770B4} = {9ADFD884-1866-418F-AB23-EC47A89A4448}
+	EndGlobalSection
+EndGlobal

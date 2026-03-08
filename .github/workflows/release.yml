@@ -1,0 +1,27 @@
+name: release
+permissions:
+  contents: read
+  packages: write
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  build_and_test:
+    name: Build and test
+    uses: Global/sam-workflows/.github/workflows/build_test.yml@main
+    with:
+        configuration: 'Release'
+        executor-tag: '8.0'
+    secrets: inherit
+    
+  push_nuget_packages:
+    name: Push nuget package
+    needs:
+      - build_and_test
+    uses: Global/sam-workflows/.github/workflows/push_nuget_packages.yml@main
+    with:
+        configuration: 'Release'
+        executor-tag: '8.0'
+    secrets: inherit

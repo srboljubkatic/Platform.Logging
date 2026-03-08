@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: net-logging
+  namespace: platform-core
+  description: .NET library for logging
+  labels:
+    software.com/project-name: platform-net-logging
+  tags:
+    - atlas
+  annotations:
+    circleci.com/project-slug: github/Global/platform-net-logging
+    backstage.io/techdocs-ref: dir:.
+    sonarqube.org/project-key: platform-net-logging
+    devops.io/version: v1
+    devops.io/handled-by: repo-as-code
+spec:
+  type: library
+  lifecycle: production
+  owner: group:default/platform
+  system: default/observability
